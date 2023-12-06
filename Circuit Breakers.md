@@ -20,4 +20,7 @@ Imagine a scenario where Service A calls Service B. If Service B encounters issu
 ### Fallback Mechanisms: 
   Fallbacks ensure the system can provide responses even when a service is unavailable.
 ## Circuit Breaker Implementations
+###  Netflix Hystrix
+###  Resilience4j
+###  Spring Cloud Circuit Breaker
 
