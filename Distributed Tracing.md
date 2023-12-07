@@ -18,7 +18,7 @@ These IDs are propagated via headers in subsequent requests between services.Pro
 3.  Propagates trace and span IDs across service boundaries using standard HTTP headers.
 
 ## Zipkin
-Zipkin is a distributed tracing system designed to help track and visualize the paths of requests as they travel through various services in a distributed architecture. 
+Zipkin provides a powerful toolset for understanding the flow of requests within distributed systems.
 
 It provides insights into how requests propagate across services, aiding in troubleshooting, performance monitoring, and understanding dependencies within a system.
 
