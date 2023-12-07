@@ -9,3 +9,8 @@ Spring Cloud Sleuth is a distributed tracing solution provided by the Spring Clo
 
 These IDs are propagated via headers in subsequent requests between services.Propagates trace and span IDs automatically add through HTTP headers.
 
+## How Sleuth Works
+1.  Generates a trace ID when a request enters the system.
+2.  Assigns a span ID for each operation within the request (e.g., processing in different services).
+3.  Propagates trace and span IDs across service boundaries using standard HTTP headers.
+
