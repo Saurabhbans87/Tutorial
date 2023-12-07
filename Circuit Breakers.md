@@ -20,7 +20,15 @@ Imagine a scenario where Service A calls Service B. If Service B encounters issu
 ### Fallback Mechanisms: 
   Fallbacks ensure the system can provide responses even when a service is unavailable.
 ## Circuit Breaker Implementations
-###  Netflix Hystrix
+
 ###  Resilience4j
+  Resilience4j is a lightweight fault tolerance library designed for Java 8 and above.Resilience4j offers multiple resilience patterns
+  1.  Circuit Breaker-Prevents a single failing component from causing cascading failures.
+  2.  Rate Limiter: Limits the rate of events or calls to a system.
+  3.  Retry: Automatically retries failed operations with customizable configurations.
+  4.  Bulkhead: Isolates different parts of the system to prevent failures from spreading.
+  5.  Time Limiter: Enforces time limits for operations.
+  6.  Retry, TimeLimiter, and RateLimiter decorators can be combined within a circuit breaker.
 ###  Spring Cloud Circuit Breaker
+###  Netflix Hystrix
 
