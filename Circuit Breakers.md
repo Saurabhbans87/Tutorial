@@ -1,7 +1,7 @@
 ## Circuit Breakers
 Circuit breakers are crucial components in distributed systems that help handle failures, prevent cascading failures, and improve system resilience. They act as a safety mechanism to detect and mitigate issues within microservices architectures.
-## Basic Concept
-Imagine a scenario where Service A calls Service B. If Service B encounters issues or is slow, Service A might experience delayed responses or become unresponsive, affecting the entire system. A circuit breaker works similarly to an electrical circuit breaker: it trips (opens) when there's a fault or failure and prevents further requests to the failing service for a certain duration.
+> [!NOTE]
+> Imagine a scenario where Service A calls Service B. If Service B encounters issues or is slow, Service A might experience delayed responses or become unresponsive, affecting the entire system. A circuit breaker works similarly to an electrical circuit breaker: it trips (opens) when there's a fault or failure and prevents further requests to the failing service for a certain duration.
 ## Circuit Breaker States
 ### Closed State
 1.    Initially, the circuit breaker is in the closed state, allowing requests to pass through to the service.
