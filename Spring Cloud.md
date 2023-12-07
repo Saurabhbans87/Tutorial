@@ -12,6 +12,8 @@ It provides solutions to common challenges encountered in building cloud-native 
 > Service Discovery
 ```
 Allows services to register themselves and discover other services dynamically.
+
+It enables applications to find and communicate with each other without hardcoding service locations.
 ```
 >Distributed Tracing
 ```
