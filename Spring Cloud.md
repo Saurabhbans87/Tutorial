@@ -10,25 +10,22 @@ It provides solutions to common challenges encountered in building cloud-native 
 
 # Spring Cloud Features
 > Service Discovery
-```
-Allows services to register themselves and discover other services dynamically.
 
-It enables applications to find and communicate with each other without hardcoding service locations.
-```
+> [!IMPORTANT]
+> Service Discovery allows dynamic registration and discovery of microservices. It enables applications to find and communicate with each other without hardcoding service locations.
+
 >Distributed Tracing
-```
-Sleuth helps in distributed tracing by assigning unique trace and span IDs to requests.
 
-Zipkin provides tools for visualizing and analyzing trace data across microservices.
-```
+> [!IMPORTANT]
+> Distributed tracing helps track and monitor requests as they traverse multiple services, providing insights into request paths, performance, and dependencies between services.
+
 >Circuit Breakers
-```
-Provides fault tolerance mechanisms to prevent cascading failures.
-```
->API Gateway
-```
-Provides a centralized entry point for clients, routing requests to various services.
 
-Handles cross-cutting concerns like authentication, rate limiting, and monitoring.
-```
+> [!IMPORTANT]
+> Circuit breakers help prevent cascading failures in distributed systems by isolating failing services, thereby improving system resilience.
+
+>API Gateway
+
+> [!IMPORTANT]
+> Provides a centralized entry point for clients, routing requests to various services and handling cross-cutting concerns like authentication, rate limiting, and monitoring.
 
