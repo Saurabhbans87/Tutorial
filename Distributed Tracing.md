@@ -2,5 +2,10 @@
 ```
 It is latency measurement of each service in distributed system or microservice architecture.
 ```
-In distributed system, each service involved in processing a request is tagged with a unique identifier. As the request passes through these services, they add information (metadata) about their actions and duration, allowing you to reconstruct the complete journey of the request. This helps in understanding performance bottlenecks, troubleshooting errors, and optimizing the system's behavior.
+Distributed tracing helps us to monitor and understand requests as they traverse multiple services in a distributed architecture. It involves generating unique identifiers (trace and span IDs) and propagating them across services to track the flow of a request.
+
+## Spring Cloud Sleuth
+Spring Cloud Sleuth is a distributed tracing solution provided by the Spring Cloud ecosystem.Sleuth assigns each incoming request a _unique trace ID and individual span IDs_ for different operations within that request's flow.
+
+These IDs are propagated via headers in subsequent requests between services.Propagates trace and span IDs automatically add through HTTP headers.
 
