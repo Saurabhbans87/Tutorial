@@ -15,3 +15,13 @@
 # Searching and Sorting: 
 + Linear Search: Searching for an element in an array sequentially.
 + Binary Search: Searching for an element in a sorted array by dividing the search interval in half.
+
+# # Searching and Sorting: 
++ Subarray Problems: Finding maximum/minimum sum subarray, contiguous subarrays with specific properties.
+  + Contiguous subarrays are sequences of elements within an array that are contiguous or adjacent to each other, meaning they appear in a sequence without any gaps. 
+  + Problems related to contiguous subarrays involve finding, counting, or manipulating these continuous sections within an array.
+
++ Two Pointer Problem: Problems involving two pointers moving through an array simultaneously.
+  + The Two Pointer Technique is a powerful algorithmic technique commonly used to solve problems involving arrays or sequences. 
+  + It utilizes two pointers (indexes or references) that typically move through the array in a particular fashion to solve the problem efficiently.
+
