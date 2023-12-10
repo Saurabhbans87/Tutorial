@@ -22,10 +22,3 @@ Hash Tables: Key-value pairs stored in buckets using a hash function for fast se
 
 Binary Trees: Trees where each node has at most two child nodes. Used for efficient searching and sorting algorithms like binary search or binary heap.
 B-Trees: Multi-level trees with more than two child nodes per node, offering faster search and insertion compared to binary trees for large datasets.
-5. Choosing the right Data Structure:
-
-The choice of a data structure depends on several factors:
-
-Type of data: Data type (integers, strings, objects) influences how elements are stored and accessed.
-Operations needed: Frequent operations (insertion, deletion, searching) should be efficient with the chosen structure.
-Performance requirements: Time and space complexity of operations should be considered for efficient program execution.
