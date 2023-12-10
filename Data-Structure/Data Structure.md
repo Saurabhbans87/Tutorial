@@ -1,24 +1,51 @@
-Data structures are fundamental building blocks for efficient storage, organization, and retrieval of data in computer programs. They dictate the way data is organized and accessed, impacting the performance and functionality of algorithms.
+# Data structures
+> [!NOTE]
+> Dat structure are building blocks program for for organizing and storing data. It provides a way to efficiently access, insert, and delete data elements.
 
-Here's a comprehensive breakdown of data structures:
+## Abstract Data Type (ADT): 
+An abstract definition of a data structure focusing on its operations and behavior without revealing its implementation details.
 
-1. Basic Concepts:
+# Data structures Types: 
 
-Definition: A data structure is a specialized format for organizing and storing data. It provides a way to efficiently access, insert, and delete data elements.
-Abstract Data Type (ADT): An abstract definition of a data structure focusing on its operations and behavior without revealing its implementation details.
-Types: Data structures can be categorized into linear, non-linear, and hierarchical based on their organization and relationships between elements.
-2. Common Linear Data Structures:
+Data structures can be categorized into linear, non-linear, and hierarchical based on their organization and relationships between elements.
++ Linear Data structures
+  + Static Data structures
+    + Array
+  + Dynamic Data structures
+    + List
+    + Stack
+    + Queue
++ Non Linear Data structures
+  + Trees
+  + Graphs
+##  
+> Arrays
 
-Arrays: Fixed-size contiguous memory locations storing data of the same type. Efficient for random access and traversing elements sequentially.
-Linked Lists: Nodes containing data and a reference to the next node in the list. Offer flexibility in adding and removing elements but slower random access.
-Stacks: LIFO (Last In First Out) data structure where elements are added and removed from the top. Efficient for backtracking and function calls.
-Queues: FIFO (First In First Out) data structure where elements are added to the back and removed from the front. Useful for processing data in a sequential order.
-3. Non-Linear Data Structures:
+> [!IMPORTANT]
+> Fixed-size contiguous memory locations storing data of the same type. Efficient for random access and traversing elements sequentially.
 
-Trees: Hierarchical structures with nodes containing data and references to child nodes. Efficient for searching and sorting data.
-Graphs: Networks of nodes (vertices) connected by edges. Useful for modeling relationships and connections between entities.
-Hash Tables: Key-value pairs stored in buckets using a hash function for fast searching and insertion based on keys.
-4. Hierarchical Data Structures:
+> Linked Lists
 
-Binary Trees: Trees where each node has at most two child nodes. Used for efficient searching and sorting algorithms like binary search or binary heap.
-B-Trees: Multi-level trees with more than two child nodes per node, offering faster search and insertion compared to binary trees for large datasets.
+> [!IMPORTANT]
+> Nodes containing data and a reference to the next node in the list. Offer flexibility in adding and removing elements but slower random access.
+
+> Stacks
+
+> [!IMPORTANT]
+> LIFO (Last In First Out) data structure where elements are added and removed from the top. Efficient for backtracking and function calls.
+
+> Queues
+
+> [!IMPORTANT]
+> FIFO (First In First Out) data structure where elements are added to the back and removed from the front. Useful for processing data in a sequential order.
+
+> Trees
+
+> [!IMPORTANT]
+> Hierarchical structures with nodes containing data and references to child nodes. Efficient for searching and sorting data.
+
+> Graphs
+
+> [!IMPORTANT]
+> Networks of nodes (vertices) connected by edges. Useful for modeling relationships and connections between entities.
+
