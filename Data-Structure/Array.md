@@ -6,17 +6,17 @@
 > An array is a fundamental data structure in computer science. 
 > It is a collection of elements of the same type that are stored at contiguous memory locations.
 
-# Basic Array Operations: 
+# Array Operations: 
 + Array Traversal: Iterating through an array and performing operations.
 + Array Modification: Modifying elements at specific indices or based on certain conditions.
 + Finding Maximum/Minimum: Finding the largest or smallest element in an array.
 + Reversing an Array: Reversing the order of elements in an array.
 
-# Searching and Sorting: 
+# Array Searching and Sorting: 
 + Linear Search: Searching for an element in an array sequentially.
 + Binary Search: Searching for an element in a sorted array by dividing the search interval in half.
 
-# Searching and Sorting: 
+# Array Subarray: 
 + Subarray Problems: Finding maximum/minimum sum subarray, contiguous subarrays with specific properties.
   + Contiguous subarrays are sequences of elements within an array that are contiguous or adjacent to each other, meaning they appear in a sequence without any gaps. 
   + Problems related to contiguous subarrays involve finding, counting, or manipulating these continuous sections within an array.
