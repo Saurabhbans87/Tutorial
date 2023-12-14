@@ -34,5 +34,18 @@
 > The Sliding Window Technique is a powerful computational technique used to efficiently solve problems involving arrays, strings, or other data structures. 
 > 
 > It works by maintaining a "window" of a fixed size that slides through the data, performing operations on the elements within the window at each step.
+# Array Algorithm:
++ Kadane's Algorithm
++ Sliding Window Technique
++ Two Pointer Technique
++ Cycle Detection
++ Prefix Sum
++ Dutch National Flag Algorithm
++ Longest Increasing Subsequence (LIS)
++ Minimum Size Subarray Sum
++ Rain Water Trapping
++ Product of Array Except Self
++ Array Rotation
++ Majority Element
 
 
