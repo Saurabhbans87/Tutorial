@@ -46,6 +46,6 @@
 + Rain Water Trapping
 + Product of Array Except Self
 + Array Rotation
-+ Majority Element
++ Moore's Voting Algorithm (Majority Element)
 
 
