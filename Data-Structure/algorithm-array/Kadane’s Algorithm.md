@@ -15,21 +15,7 @@ Iterate through the array
         max_sum = Math.max(max_sum, maxEndingHere);
 return max_sum
 ```
-# Explanataion:
-```java
-Here's a simplified explanation of Kadane's Algorithm:
 
-Initialize two variables:
-        max_sum with the first element of the array
-        max_sum_at_index first element of the array
-
-Iterate through the array:
-        Determine the maximum between the current element and extending the previous subarray
-        Update maxSoFar with the maximum of maxSoFar and maxEndingHere
-At the end of the iteration, max_sum will contain the maximum subarray sum.
-
-
-```
 # Implementation in Java
 ```java
 public class Kadane {
@@ -43,8 +29,7 @@ public class Kadane {
         int max_sum = 0;
         int max_sum_at_index = 0;
         for (int i = 0; i < arr.length; i++){
-            max_sum_at_index = max_sum_at_index + arr[i];
-            max_sum_at_index = Math.max(arr[i], max_sum_at_index);
+            max_sum_at_index = Math.max(arr[i], max_sum_at_index + arr[i]);
             max_sum = Math.max(max_sum,max_sum_at_index);
         }
         return max_sum;
