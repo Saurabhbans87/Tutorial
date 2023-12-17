@@ -12,7 +12,7 @@ Initialize:
         
 Iterate through the array 
         max_sum_at_index = Math.max(arr[i], max_sum_at_index + arr[i]);
-        max_sum = Math.max(max_sum, maxEndingHere);
+        max_sum = Math.max(max_sum, max_sum_at_index);
 return max_sum
 ```
 
