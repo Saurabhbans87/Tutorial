@@ -1,40 +1,36 @@
 # Kadane’s Algorithm
 > [!NOTE]
 > Kadane’s Algorithm is used to solve the maximum subarray problem.
+> 
 > The maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers that has the largest sum.
 
 # Pseudocode:
 ```java
 Initialize:
-    max_sum = INT_MIN
-    max_sum_at_index = 0
+    max_sum = arr[0]
+    max_sum_at_index = arr[0]
         
-Iterate through the array
-  (a) max_sum_at_index = max_sum_at_index + a[i]
-  (b) if(max_sum < max_sum_at_index)
-        max_sum = max_sum_at_index
-  (c) if(max_sum_at_index < 0)
-        max_sum_at_index = 0
-        
+Iterate through the array 
+        max_sum_at_index = Math.max(arr[i], max_sum_at_index + arr[i]);
+        max_sum = Math.max(max_sum, maxEndingHere);
 return max_sum
 ```
 # Explanataion:
 ```java
 Here's a simplified explanation of Kadane's Algorithm:
 
-Initialize two variables: max_sum and max_sum_at_index to 0 or the first element of the array.
+Initialize two variables:
+        max_sum with the first element of the array
+        max_sum_at_index first element of the array
 
 Iterate through the array:
-
-        (a) For each element, update max_ending_here by adding the current element to it.
-        (b) Update max_sum if max_sum_at_index is greater than max_sum.
-        (c) If max_sum_at_index becomes negative, reset it to 0 because a negative sum will not contribute to the maximum subarray sum.
-        
+        Determine the maximum between the current element and extending the previous subarray
+        Update maxSoFar with the maximum of maxSoFar and maxEndingHere
 At the end of the iteration, max_sum will contain the maximum subarray sum.
 
 
 ```
-# Kadane’s Algorithm Implementation in Java
+# Implementation in Java
 ```java
 public class Kadane {
     public static void main(String[] args) {
@@ -48,12 +44,8 @@ public class Kadane {
         int max_sum_at_index = 0;
         for (int i = 0; i < arr.length; i++){
             max_sum_at_index = max_sum_at_index + arr[i];
-            if(max_sum < max_sum_at_index){
-                max_sum = max_sum_at_index;
-            }
-            if(max_sum_at_index < 0){
-                max_sum_at_index = 0;
-            }
+            max_sum_at_index = Math.max(arr[i], max_sum_at_index);
+            max_sum = Math.max(max_sum,max_sum_at_index);
         }
         return max_sum;
     }
