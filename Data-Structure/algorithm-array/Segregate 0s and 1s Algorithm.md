@@ -24,7 +24,7 @@ private static int[] countingZerosAndOnes(int[] array) {
 # Two-Traversal Approach
 > [!NOTE]
 > Count the number of 0s (count) in the array.
-> 
+> Traverse the array and replace the first count elements with 0s and the rest with 1s.
 ```java
 private static int[] segregateTwoTraversalApproach(int[] array) {
         int zeroCount=0;
@@ -44,7 +44,6 @@ private static int[] segregateTwoTraversalApproach(int[] array) {
         return array;
     }
 ```
-> Traverse the array and replace the first count elements with 0s and the rest with 1s.
 # Dutch National Flag Algorithm
 > [!NOTE]
 > Dutch National Flag Algorithm, also known as the 3-way Partitioning.
