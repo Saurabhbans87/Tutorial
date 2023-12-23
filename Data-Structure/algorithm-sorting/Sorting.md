@@ -7,6 +7,26 @@ There are two type of sorting algorithm.
    Compares adjacent elements and swaps them if they are in the wrong order.
    Continues until no more swaps are needed.
    Time Complexity: O(n^2) in the worst and average cases.
+```java
+BubbleSort(arr)
+    n = length of arr
+
+    for i = 0 to n-1
+        // Flag to check if any swap is performed in the current iteration
+        swapped = false
+
+        // Last i elements are already in place, so no need to check them
+        for j = 0 to n-i-1
+            if arr[j] > arr[j+1]
+                // Swap arr[j] and arr[j+1]
+                swap arr[j] with arr[j+1]
+                swapped = true
+
+        // If no two elements were swapped in the inner loop, array is already sorted
+        if swapped = false
+            break
+
+```
 ## Selection Sort:
    Finds the minimum element from the unsorted part and places it at the beginning.
    Repeats this process for the remaining unsorted portion.
