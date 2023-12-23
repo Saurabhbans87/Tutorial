@@ -11,10 +11,43 @@ There are two type of sorting algorithm.
    Finds the minimum element from the unsorted part and places it at the beginning.
    Repeats this process for the remaining unsorted portion.
    Time Complexity: O(n^2) in all cases.
+```java
+SelectionSort(arr)
+        n = length of arr
+
+        for i = 0 to n-1
+        minIndex = i
+
+        // Find the index of the minimum element in the unsorted part
+        for j = i+1 to n-1
+        if arr[j] < arr[minIndex]
+        minIndex = j
+
+        // Swap the found minimum element with the first element of the unsorted part
+        swap arr[i] with arr[minIndex]
+
+```
 ## Insertion Sort:
    Builds the final sorted array one element at a time.
    Takes one element from the unsorted part and inserts it into its correct position in the sorted part.
    Time Complexity: O(n^2) in the worst case but efficient for small datasets.
+```java
+InsertionSort(arr)
+    n = length of arr
+    
+    for i = 1 to n-1
+        key = arr[i]
+        j = i - 1
+        
+        // Move elements of arr[0..i-1] that are greater than key
+        // to one position ahead of their current position
+        while j >= 0 and arr[j] > key
+            arr[j + 1] = arr[j]
+            j = j - 1
+        
+        arr[j + 1] = key
+
+```
 ## Merge Sort:
    Divides the array into smaller parts until each part contains one element.
    Merges these smaller parts back together in a sorted manner.
