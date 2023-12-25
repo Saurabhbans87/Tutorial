@@ -8,5 +8,7 @@ Sliding window algorithm is a problem solving technique that transforms two nest
 It can reduce the time complexity to O(n).
 ```
 # Pseudo-Code
-``
+```java
+
+```
 
