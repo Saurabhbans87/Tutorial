@@ -12,18 +12,18 @@ It can reduce the time complexity to O(n).
 function slidingWindowAlgorithm(Array arr, Integer windowSize):
     maxSum = 0
 
-    // Calculate the sum of the first window
+    // first in first Calculate the window sum of the first window
     for i from 0 to windowSize-1:
-        maxSum += arr[i]
+        windowSum += arr[i]
 
-    currentSum = maxSum
+    currentSum = windowSum
 
-    // Iterate through the array to find the maximum sum
+    // Iterate through the array to find the new window Sum
     for i from windowSize to arr.length-1:
         currentSum = currentSum - arr[i - windowSize] + arr[i]
-        maxSum = max(maxSum, currentSum)
+        maxSum = max(windowSum, currentSum)
 
-    return maxSum
+    return windowSum
 
 ```
 
