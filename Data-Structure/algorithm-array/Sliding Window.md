@@ -7,5 +7,6 @@
 Sliding window algorithm is a problem solving technique that transforms two nested loops into one loop. 
 It can reduce the time complexity to O(n).
 ```
-
+# Pseudo-Code
+``
 
