@@ -1,7 +1,7 @@
 # Sorting Algorithms
 There are two type of sorting algorithm.
-+ Comparison-Based
-+ Non-Comparison-Based
+   + Comparison-Based
+   + Non-Comparison-Based
 # Comparison-Based Sorting Algorithms:
 ## Bubble Sort:
    Compares adjacent elements and swaps them if they are in the wrong order.
