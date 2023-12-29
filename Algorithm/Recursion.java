@@ -8,9 +8,10 @@ package Algorithm;
 public class Recursion {
     public static void main(String[] args) {
         System.out.println("Number");
-        int n =5;
+        int n =10;
         printNumberRecursive(n);
-        System.out.println("Factorial of 5 is: "+factorial(5));
+        System.out.println("Factorial of 5 is");
+        System.out.println(factorial(8));
     }
 
     private static int factorial(int n){
