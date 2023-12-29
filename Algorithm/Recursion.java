@@ -13,14 +13,12 @@ public class Recursion {
         System.out.println("Factorial of 5 is");
         System.out.println(factorial(8));
     }
-
     private static int factorial(int n){
         if (n == 1)
             return 1;
         else
             return(n * factorial(n-1));
     }
-
     private static int printNumberRecursive(int n) {
         System.out.print(n+" ");
         if(n <= 0){
