@@ -6,11 +6,12 @@
 package Algorithm;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class LinearSearch {
     public static void main(String[] args) {
         int[] array = {12,13,42,16,76,43,28,27,97,45};
-        int key =100;
+        int key =97;
         //Time Complexity is O(n) as we need to traverse the complete array in worst case
         //Space Complexity is O(1) no extra memory is used to allocate the array.
         int index = linearSearch(array, key);
@@ -20,31 +21,19 @@ public class LinearSearch {
         else{
             System.out.println("Key found at index " +index);
         }
-        //Time Complexity is O(n) as we need to traverse the complete array in worst case
-        // but in average case i t would be more efficent
-        //Space Complexity is O(1) no extra memory is used to allocate the array.
-        int sortedIndex = sortedLinearSearch(array, key);
-        if(sortedIndex == -1){
-            System.out.println("Key not found");
-        }
-        else{
-            System.out.println("Key found at index " +sortedIndex);
-        }
+        hashTableLinearSearch(array, key);
     }
 
-    private static int sortedLinearSearch(int[] array, int key) {
-        Arrays.sort(array);
-        for (int i=0; i < array.length-1; i++){
-            if(array[i] == key){
-                return i;
-            }
-            if(array[i] > key){
-                return -1;
+    private static void hashTableLinearSearch(int[] array, int key) {
+        HashSet hashSet = new HashSet();
+        for (int i =0; i< array.length -1 ;i++){
+            if(hashSet.contains(array[i])){
+                System.out.println("Key found at " +i);
+            }else{
+                hashSet.add(array[i]);
             }
         }
-        return -1;
     }
-
     private static int linearSearch(int[] array, int key) {
         for (int i=0; i < array.length-1; i++){
             if(array[i] == key){
