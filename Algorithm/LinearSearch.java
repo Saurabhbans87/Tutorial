@@ -23,15 +23,13 @@ public class LinearSearch {
         //Time Complexity is O(n) as we need to traverse the complete array in worst case
         // but in average case i t would be more efficent
         //Space Complexity is O(1) no extra memory is used to allocate the array.
-        int sortedIndex = linearSearch(array, key);
+        int sortedIndex = sortedLinearSearch(array, key);
         if(sortedIndex == -1){
             System.out.println("Key not found");
         }
         else{
             System.out.println("Key found at index " +sortedIndex);
         }
-        sortedLinearSearch(array, key);
-
     }
 
     private static int sortedLinearSearch(int[] array, int key) {
