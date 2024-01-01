@@ -8,13 +8,14 @@ package Algorithm;
 import java.util.Arrays;
 import java.util.HashSet;
 
+//Time Complexity is O(n) as we need to traverse the complete array in worst case
+// but in average case i t would be more efficent
+//Space Complexity is O(1) no extra memory is used to allocate the array.
+
 public class LinearSearchSorted {
     public static void main(String[] args) {
         int[] array = {12,13,42,16,76,43,28,27,97,45};
         int key =12;
-        //Time Complexity is O(n) as we need to traverse the complete array in worst case
-        // but in average case i t would be more efficent
-        //Space Complexity is O(1) no extra memory is used to allocate the array.
         int sortedIndex = sortedLinearSearch(array, key);
         if(sortedIndex == -1){
             System.out.println("Key not found");
