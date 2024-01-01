@@ -4,7 +4,8 @@
  * Project Name: Tutorial
  */
 package Algorithm;
-
+//Time Complexity is O(logn) as we always take half input and throw out other half.
+//Space Complexity is O(1) no extra memory is used to allocate the array.
 public class BinarySearch {
     public static void main(String[] args) {
         int[] array = {12,23,25,36,48,49,52,58,60,65,78,82};
