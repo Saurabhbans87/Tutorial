@@ -7,9 +7,9 @@
 Sliding window algorithm is a problem solving technique that transforms two nested loops into one loop. 
 It can reduce the time complexity to O(n).
 ```
-
-The sliding window algorithm is a technique used in computer science for finding subarrays or subsequences that fulfill a certain condition within a larger array or sequence. 
-It involves creating a window of a fixed size and moving that window through the larger array step by step, updating it according to certain rules or conditions.
+> [!TIP]
+> The sliding window algorithm is a technique used in computer science for finding sub arrays or subsequences that fulfill a certain condition within array or sequence.
+> It involves creating a window of a fixed size and moving that window through the larger array step by step, updating it according to certain rules or conditions.
 
 # Pseudo-Code
 ```java
