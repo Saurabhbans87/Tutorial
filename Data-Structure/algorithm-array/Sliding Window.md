@@ -19,6 +19,18 @@ There are different types of sliding window algorithms based on the specific pro
 + Two Pointers or Dual Sliding Windows
 + Optimized Sliding Windows
 
+## Fixed Size Window
+    The window size remains constant throughout the process. 
+    It slides through the array or string, and computations are performed within this fixed-size window.
+## Variable Size Window
+    Here, the window size can change based on certain conditions or requirements. 
+    The window expands or contracts dynamically based on the problem's constraints.
+## Two Pointers or Dual Sliding Windows
+    In certain cases, two pointers or windows are used simultaneously to traverse the array or string. 
+    These pointers may move at different speeds or in different directions based on the problem.
+## Optimized Sliding Windows
+    Techniques that involve optimizing the sliding window approach by reducing unnecessary calculations or iterations.
+
 # Pseudo-Code
 ```java
 function slidingWindowAlgorithm(Array arr, Integer windowSize):
