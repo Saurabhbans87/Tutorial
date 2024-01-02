@@ -12,11 +12,12 @@ It can reduce the time complexity to O(n).
 > 
 > It involves creating a window of a fixed size and moving that window through the array step by step, updating it according to certain rules or conditions.
 
+# Sliding Window Type
 There are different types of sliding window algorithms based on the specific problem they aim to solve.
-    + Fixed Size Window
-    + Variable Size Window
-    + Two Pointers or Dual Sliding Windows
-    + Optimized Sliding Windows
++ Fixed Size Window
++ Variable Size Window
++ Two Pointers or Dual Sliding Windows
++ Optimized Sliding Windows
 
 # Pseudo-Code
 ```java
