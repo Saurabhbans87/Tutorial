@@ -31,7 +31,7 @@ There are different types of sliding window algorithms based on the specific pro
 ## Optimized Sliding Windows
     Techniques that involve optimizing the sliding window approach by reducing unnecessary calculations or iterations.
 
-# Pseudo-Code
+# Pseudo-Code:Fixed Size Window
 ```java
 function slidingWindowAlgorithm(Array arr, Integer windowSize):
     maxSum = 0
@@ -50,6 +50,7 @@ function slidingWindowAlgorithm(Array arr, Integer windowSize):
     return maxSum
 
 ```
+# Pseudo-Code:Variable Size Window
 ```java
 variableSizeSlidingWindow(arr, target):
     n = length of arr
