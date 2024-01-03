@@ -56,7 +56,7 @@ variableSizeSlidingWindow(arr, target):
     n = length of arr
     left = 0
     windowSum = 0
-    minLength = infinity
+    minLength = Integer.MAX_VALUE
     
     for right from 0 to n-1:
         // Expand the window by including the element at right
@@ -69,10 +69,6 @@ variableSizeSlidingWindow(arr, target):
             left++
     
     // If no subarray found, return 0; otherwise, return the minLength
-    if minLength == infinity:
-        return 0
-    else:
-        return minLength
-
+    return minLength == Integer.MAX_VALUE ? 0 : minLength;
 ```
 
