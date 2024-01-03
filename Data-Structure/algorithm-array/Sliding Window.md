@@ -50,4 +50,28 @@ function slidingWindowAlgorithm(Array arr, Integer windowSize):
     return maxSum
 
 ```
+```java
+variableSizeSlidingWindow(arr, target):
+    n = length of arr
+    windowStart = 0
+    windowSum = 0
+    minLength = infinity
+    
+    for windowEnd from 0 to n-1:
+        // Expand the window by including the element at windowEnd
+        windowSum += arr[windowEnd]
+        
+        // Shrink the window as small as possible until the sum is less than or equal to target
+        while windowSum >= target:
+            minLength = min(minLength, windowEnd - windowStart + 1)
+            windowSum -= arr[windowStart]
+            windowStart++
+    
+    // If no subarray found, return 0; otherwise, return the minLength
+    if minLength == infinity:
+        return 0
+    else:
+        return minLength
+
+```
 
