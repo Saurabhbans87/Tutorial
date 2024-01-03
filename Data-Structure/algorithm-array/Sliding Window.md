@@ -15,7 +15,7 @@ It can reduce the time complexity to O(n).
 # Sliding Window Type
 There are different types of sliding window algorithms based on the specific problem they aim to solve.
 + Fixed Size Window
-+ Variable Size Window
++ Dynamic Sliding Window or Variable Size Window
 + Two Pointers or Dual Sliding Windows
 + Optimized Sliding Windows
 
