@@ -71,4 +71,4 @@ variableSizeSlidingWindow(arr, target):
     // If no subarray found, return 0; otherwise, return the minLength
     return minLength == Integer.MAX_VALUE ? 0 : minLength;
 ```
-
+# Pseudo-Code:Two Pointers or Dual Sliding Windows
