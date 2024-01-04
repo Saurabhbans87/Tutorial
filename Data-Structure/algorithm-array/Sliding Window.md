@@ -57,17 +57,14 @@ variableSizeSlidingWindow(arr, target):
     left = 0
     windowSum = 0
     minLength = Integer.MAX_VALUE
-    
     for right from 0 to n-1:
         // Expand the window by including the element at right
         windowSum += arr[right]
-        
         // Shrink the window as small as possible until the sum is less than or equal to target
         while windowSum >= target:
             minLength = min(minLength, right - left + 1)
             windowSum -= arr[left]
             left++
-    
     // If no subarray found, return 0; otherwise, return the minLength
     return minLength == Integer.MAX_VALUE ? 0 : minLength;
 ```
@@ -76,7 +73,6 @@ variableSizeSlidingWindow(arr, target):
 twoPointersAlgorithm(arr, target):
     left = 0
     right = length of arr - 1
-    
     while (left < right)
         currentSum = arr[left] + arr[right]
         if currentSum equals target:
