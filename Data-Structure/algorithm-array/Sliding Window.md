@@ -77,19 +77,15 @@ twoPointersAlgorithm(arr, target):
     left = 0
     right = length of arr - 1
     
-    while left < right:
+    while (left < right)
         currentSum = arr[left] + arr[right]
-        
         if currentSum equals target:
             // Pair found, return or perform necessary operations
-            
         if currentSum < target:
             // Move the left pointer to increase the sum
             left++
         else:
             // Move the right pointer to decrease the sum
             right--
-    
     // If no pair found, return appropriate result
-
 ```
