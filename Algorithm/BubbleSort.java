@@ -7,17 +7,15 @@ package Algorithm;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] array = {12,34,23,18,19,10,45,56,32,43,67,15,76};
+        int[] array = {13,34,23,18,19,10,45,56,32,43,67,15,76,8};
         bubbleSortAlgorithm(array);
         printBubbleSortAlgorithm(array);
     }
-
     private static void printBubbleSortAlgorithm(int[] array) {
         for(int i=0;i< array.length;i++){
             System.out.print(array[i]+",");
         }
     }
-
     private static int[] bubbleSortAlgorithm(int[] array) {
         for(int i=0;i < array.length-1;i++){
             for(int j=0; j< array.length-1; j++){
