@@ -8,17 +8,6 @@ package Algorithm;
 //Space Complexity is O(1) no extra memory is used to allocate the array.
 
 public class BinarySearch {
-    public static void main(String[] args) {
-        int[] array = {12,23,25,36,48,49,52,58,60,65,78,82};
-        int key = 36;
-        int index = binarySearchAlgorithm(array, key);
-        if(index == -1){
-            System.out.print("Element not found");
-        }else{
-            System.out.println("Element is found at " +index);
-        }
-    }
-
     private static int binarySearchAlgorithm(int[] array, int key) {
         int first = 0;
         int last =array.length-1;
@@ -33,5 +22,15 @@ public class BinarySearch {
             }
         }
         return -1;
+    }
+    public static void main(String[] args) {
+        int[] array = {12,23,25,36,48,49,52,58,60,65,78,82};
+        int key = 36;
+        int index = binarySearchAlgorithm(array, key);
+        if(index == -1){
+            System.out.print("Element not found");
+        }else{
+            System.out.println("Element is found at " +index);
+        }
     }
 }
