@@ -8,12 +8,6 @@ package stack;
 import java.util.Stack;
 
 public class StringReverse {
-    public static void main(String[] args) {
-        String str = "INDIA";
-        String reverseString = reverseString(str);
-        System.out.print(reverseString);
-    }
-
     private static String reverseString(String str) {
         Stack<Character> characterStack = new Stack<>();
         char[] charArray = str.toCharArray();
@@ -24,5 +18,10 @@ public class StringReverse {
             charArray[i] = characterStack.pop();
         }
         return new String(charArray);
+    }
+    public static void main(String[] args) {
+        String str = "INDIA";
+        String reverseString = reverseString(str);
+        System.out.print(reverseString);
     }
 }
