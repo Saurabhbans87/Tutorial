@@ -12,19 +12,6 @@ import java.util.HashSet;
 //Space Complexity is O(1) no extra memory is used to allocate the array.
 
 public class LinearSearch {
-    public static void main(String[] args) {
-        int[] array = {12,13,42,16,76,43,28,27,97,45};
-        int key =97;
-        int index = linearSearch(array, key);
-        if(index == -1){
-            System.out.println("Key not found");
-        }
-        else{
-            System.out.println("Key found at index " +index);
-        }
-        hashTableLinearSearch(array, key);
-    }
-
     private static void hashTableLinearSearch(int[] array, int key) {
         HashSet hashSet = new HashSet();
         for (int i =0; i< array.length -1 ;i++){
@@ -42,5 +29,17 @@ public class LinearSearch {
             }
         }
         return -1;
+    }
+    public static void main(String[] args) {
+        int[] array = {12,13,42,16,76,43,28,27,97,45};
+        int key =97;
+        int index = linearSearch(array, key);
+        if(index == -1){
+            System.out.println("Key not found");
+        }
+        else{
+            System.out.println("Key found at index " +index);
+        }
+        hashTableLinearSearch(array, key);
     }
 }
