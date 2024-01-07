@@ -20,7 +20,7 @@ public class StackUsingArray {
         return (top+1);
     }
     public void push(int num){
-        if(top >= size-1){
+        if(isEmpty()){
             throw new IllegalStateException("Stack overflow exception");
         }
         top = top+1;
