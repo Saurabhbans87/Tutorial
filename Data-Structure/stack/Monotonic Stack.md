@@ -9,3 +9,7 @@ The main idea is to preserve this order to efficiently find the next greater or 
 + Decreasing Monotonic Stack
     + Elements are pushed onto the stack while maintaining a strictly decreasing order. When a larger element is encountered, it pops elements from the stack until the condition of decreasing order is satisfied.
     + Useful for finding the next smaller element to the right/left for each element in an array.
+# Applications
++ Finding Next Greater/Smaller Elements
++ Histogram Area Calculation
++ Stock Span Problem
