@@ -51,10 +51,14 @@ public class StackUsingDynamicArray {
         StackUsingDynamicArray stackUsingDynamicArray = new StackUsingDynamicArray(2);
         stackUsingDynamicArray.push(2);
         stackUsingDynamicArray.push(3);
-        System.out.println(stackUsingDynamicArray.pop());
+        System.out.println("Pop element is "+stackUsingDynamicArray.pop());
         stackUsingDynamicArray.push(4);
         stackUsingDynamicArray.push(6);
         stackUsingDynamicArray.push(8);
-        System.out.println(stackUsingDynamicArray.pop());
+        System.out.println("Pop element is "+stackUsingDynamicArray.pop());
+        stackUsingDynamicArray.push(10);
+        stackUsingDynamicArray.push(12);
+        stackUsingDynamicArray.push(16);
+        System.out.println("Pop element is "+stackUsingDynamicArray.pop());
     }
 }
