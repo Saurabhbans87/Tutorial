@@ -60,6 +60,25 @@ public class LinkedList {
         current.next = newNode;
     }
 
+    public void insertAfterNode(int afterNodeData, int data){
+        Node newNode = new Node(45);
+        Node current = head;
+        if(current== null);
+        {
+            head = newNode;
+        }
+        while(current.next != null && current.data != afterNodeData)
+        {
+                current = current.next;
+        }
+        if (current.next != null) {
+            newNode.next = current.next;
+            current.next = newNode;
+        } else {
+            System.out.println("Node with existingData not found");
+        }
+    }
+
     public static void main(String[] args) {
         //Creating linked list
         LinkedList linkedList = new LinkedList();
@@ -95,6 +114,11 @@ public class LinkedList {
         System.out.println(" ");
         System.out.println("Adding node at End of linkedlist");
         linkedList.insertNodeAtEnd(40);
+        linkedList.display();
+
+        System.out.println(" ");
+        System.out.println("Adding node at given position of linkedlist");
+        linkedList.insertAfterNode(15,48);
         linkedList.display();
     }
 }
