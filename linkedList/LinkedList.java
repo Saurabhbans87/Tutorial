@@ -29,15 +29,29 @@ public class LinkedList {
     }
 
     public static void main(String[] args) {
+        //Creating linked list
         LinkedList linkedList = new LinkedList();
-        linkedList.head = new Node(2);
+//        linkedList.head = new Node(2);
+//
+//        Node second = new Node(5);
+//        Node third = new Node(8);
+//
+//        linkedList.head.next=second;
+//        second.next=third;
+//        linkedList.display();
+        //Creating node
+        Node first = new Node(5);
+        Node second = new Node(12);
+        Node third = new Node(14);
+        Node fourth = new Node(15);
+        //assigning reference
+        linkedList.head = first;
+        first.next = second;
+        second.next = third;
+        third.next = fourth;
 
-        Node second = new Node(5);
-        Node third = new Node(8);
-
-        linkedList.head.next=second;
-        second.next=third;
         linkedList.display();
+
 
     }
 }
