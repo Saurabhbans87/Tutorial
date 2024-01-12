@@ -22,10 +22,25 @@ public class LinkedList {
     }
     public void display(){
         Node current = head;
+        if(current == null){
+            System.out.println("Linkedlist is empty");
+        }
         while(current != null){
             System.out.print(current.data +" ");
             current = current.next;
         }
+    }
+    public void linkedListLength(){
+        int count = 0;
+        Node current = head;
+        if(current == null){
+            System.out.println("Linkedlist is empty");
+        }
+        while(current != null){
+            count++;
+            current=current.next;
+        }
+        System.out.println("Length of linkelist is " +count);
     }
 
     public static void main(String[] args) {
@@ -51,6 +66,9 @@ public class LinkedList {
         third.next = fourth;
 
         linkedList.display();
+
+        //lenfth of linkedlist
+        linkedList.linkedListLength();
 
 
     }
