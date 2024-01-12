@@ -42,6 +42,11 @@ public class LinkedList {
         }
         System.out.println("Length of linkelist is " +count);
     }
+    public void insertNodeAtBeginning(int data){
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+    }
 
     public static void main(String[] args) {
         //Creating linked list
@@ -66,8 +71,13 @@ public class LinkedList {
         third.next = fourth;
 
         linkedList.display();
+        System.out.println(" ");
+        System.out.println("Adding node at beginning of linkedlist");
+        linkedList.insertNodeAtBeginning(30);
 
-        //lenfth of linkedlist
+        linkedList.display();
+        System.out.println(" ");
+        System.out.println("Length of linkedlist");
         linkedList.linkedListLength();
 
 
