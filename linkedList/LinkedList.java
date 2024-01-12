@@ -48,6 +48,18 @@ public class LinkedList {
         head = newNode;
     }
 
+    public void insertNodeAtEnd(int data){
+        Node newNode = new Node(data);
+        if(head == null){
+            head = newNode;
+        }
+        Node current = head;
+        while(current.next!= null){
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+
     public static void main(String[] args) {
         //Creating linked list
         LinkedList linkedList = new LinkedList();
@@ -80,6 +92,9 @@ public class LinkedList {
         System.out.println("Length of linkedlist");
         linkedList.linkedListLength();
 
-
+        System.out.println(" ");
+        System.out.println("Adding node at End of linkedlist");
+        linkedList.insertNodeAtEnd(40);
+        linkedList.display();
     }
 }
