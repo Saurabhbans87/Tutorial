@@ -67,5 +67,19 @@ public class ArrayCopy {
         e[4] = 100;
         System.out.println(e[4]);
         System.out.println(f[4]);
+        System.out.println("*************************Copying An Array Using System.arraycopy method********************************");
+        int[] g = {12, 21, 0, 5, 7};
+        int[] h = new int[g.length];
+        System.arraycopy(g,0,h,0,g.length);
+        for (int i = 0; i < a.length; i++)
+        {
+            h[i] = g[i];
+        }
+        g[2] = 56;
+        System.out.println(g[2]);
+        System.out.println(h[2]);
+        h[4] = 100;
+        System.out.println(g[4]);
+        System.out.println(h[4]);
     }
 }
