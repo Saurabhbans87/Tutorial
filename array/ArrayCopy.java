@@ -5,6 +5,8 @@
  */
 package array;
 
+import java.util.Arrays;
+
 public class ArrayCopy {
     public static void main(String[] args) {
         int[] array = {2,3,4,5,6};
@@ -27,5 +29,43 @@ public class ArrayCopy {
         for(int i=0;i< arrayCopy.length;i++){
             System.out.print(arrayCopy[i]+",");
         }
+        System.out.println("*************************Copying An Array Using for Loop********************************");
+        int[] a = {12, 21, 0, 5, 7};
+        int[] b = new int[a.length];
+        for (int i = 0; i < a.length; i++)
+        {
+            b[i] = a[i];
+        }
+        a[2] = 56;
+        System.out.println(b[2]);
+        b[4] = 100;
+        System.out.println(a[4]);
+
+        System.out.println("*************************Copying An Array Using copyOf method********************************");
+        int[] c = {12, 21, 0, 5, 7};
+        int[] d = Arrays.copyOf(c,c.length);
+        for (int i = 0; i < a.length; i++)
+        {
+            d[i] = d[i];
+        }
+        d[2] = 56;
+        System.out.println(d[2]);
+        System.out.println(c[2]);
+        d[4] = 100;
+        System.out.println(d[4]);
+        System.out.println(c[4]);
+        System.out.println("*************************Copying An Array Using clone method********************************");
+        int[] e = {12, 21, 0, 5, 7};
+        int[] f = e.clone();
+        for (int i = 0; i < a.length; i++)
+        {
+            f[i] = e[i];
+        }
+        f[2] = 56;
+        System.out.println(f[2]);
+        System.out.println(e[2]);
+        e[4] = 100;
+        System.out.println(e[4]);
+        System.out.println(f[4]);
     }
 }
