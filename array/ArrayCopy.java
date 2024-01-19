@@ -6,7 +6,12 @@
 package array;
 
 import java.util.Arrays;
-
+        /*
+        1) Using for loop
+        2) Using Arrays.copyOf() method
+        3) Using System.arraycopy() method
+        4) Using clone() method
+         */
 public class ArrayCopy {
     public static void main(String[] args) {
         int[] array = {2,3,4,5,6};
