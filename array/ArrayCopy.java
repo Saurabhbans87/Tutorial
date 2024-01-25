@@ -14,7 +14,7 @@ import java.util.Arrays;
          */
 public class ArrayCopy {
     public static void main(String[] args) {
-        int[] array = {2,3,4,5,6};
+        int[] array = {2,3,4,5,6,8,9};
         int[] arrayCopy = array;
         for (int arr:arrayCopy) {
             System.out.print(arr+",");
