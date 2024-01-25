@@ -7,7 +7,7 @@ package array;
 
 public class Leader {
     public static void main(String[] args) {
-        int[] array = {16, 17, 4, 3, 5, 2};
+        int[] array = {16, 17, 4, 3, 5, 2,7,8};
         leaderElement(array);
     }
 
