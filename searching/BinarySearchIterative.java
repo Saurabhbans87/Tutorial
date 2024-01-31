@@ -7,7 +7,7 @@ package searching;
 
 public class BinarySearchIterative {
     public static void main(String[] args) {
-        int[] array = {12,14,23,26,28,35,40,45,48,50,56,58,65,70};
+        int[] array = {12,14,23,26,28,35,40,45,48,50,56,58,65,70,75};
         int searchElement = 56;
         int index = searchUsingBinaryIterativeWay(array, searchElement);
         if(index == -1){
