@@ -7,7 +7,7 @@ package searching;
 
 public class BinarySearchRecursive {
     public static void main(String[] args) {
-        int[] array = {12,14,23,26,28,35,40,45,48,50,56,58,65,70};
+        int[] array = {12,14,23,26,28,35,40,45,48,50,56,58,65,70,75,80};
         int searchElement = 56;
         int left = 0;
         int right = array.length-1;
