@@ -7,7 +7,7 @@ package searching;
 
 public class LinearSerach {
     public static void main(String[] args) {
-        int[] array = {3,2,12,34,56,76,43,17,76,90};
+        int[] array = {3,2,12,34,56,76,43,17,76,90,32,37};
         int searchElement = 76;
         int index = searchElement(array, searchElement);
         if(index == -1){
