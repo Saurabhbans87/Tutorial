@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class Insertion {
     public static void main(String[] args) {
-        int[] array = {8,5,9,2,7,10,9,12};
+        int[] array = {8,5,9,2,7,10,9,12,15,13};
         insertionSort(array);
         System.out.println(Arrays.toString(array));
     }
