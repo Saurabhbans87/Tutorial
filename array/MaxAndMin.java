@@ -10,20 +10,27 @@ import java.util.Arrays;
 public class MaxAndMin {
     public static void main(String[] args) {
         int[] array = {3,5,7,8,9,12};
-        maxAndMIn(array);
-        System.out.println(Arrays.toString(array));
+        int max= maxNum(array);
+        System.out.println("Max number is " +max);
+        int min =minNumber(array);
+        System.out.println("Min number is " +min);
     }
 
-    private static void maxAndMIn(int[] array) {
-        int max = array.length-1;
-        int min=0;
-        for(int i=0;i< array.length;i++){
-            if(array[i] < max){
-                int temp = array[i];
-                array[i] = array[max];
-                array[max] = temp;
-            }
-            max--;
+    public static int minNumber(int[] array){
+        int min = array[0];
+        for(int i=1;i< array.length;i++){
+            min = Math.min(min,array[i]);
         }
+        return min;
     }
+
+    private static int maxNum(int[] array) {
+        int max = array[0];
+        for(int i=1;i< array.length;i++){
+            max = Math.max(max,array[i]);
+        }
+        return max;
+    }
+
+
 }
