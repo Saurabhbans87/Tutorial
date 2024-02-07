@@ -3,7 +3,7 @@ package array;
 class Solution
 {
     public static void main(String[] args) {
-        long[] a = {4,5,12,67,46,98,45,80};
+        long[] a = {4,5,12,67,46,98,45,80,86};
         long min = getMin(a,a.length);
         System.out.println("Min" +min);
         long max = getMin(a,a.length);
