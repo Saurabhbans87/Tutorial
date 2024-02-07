@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class MaxAndMin {
     public static void main(String[] args) {
-        int[] array = {3,5,7,8,9,12};
+        int[] array = {3,5,7,8,9,12,16,43};
         int max= maxNum(array);
         System.out.println("Max number is " +max);
         int min =minNumber(array);
