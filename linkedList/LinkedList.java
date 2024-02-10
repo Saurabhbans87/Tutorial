@@ -79,6 +79,16 @@ public class LinkedList {
         }
     }
 
+    private void search(Node head, int i) {
+        Node current = head; // Initialize current
+        while (current != null) {
+            if (current.data == i){
+                System.out.println("Data found");
+            }
+            current = current.next;
+        }
+    }
+
     public static void main(String[] args) {
         //Creating linked list
         LinkedList linkedList = new LinkedList();
@@ -103,6 +113,8 @@ public class LinkedList {
 
         linkedList.display();
         System.out.println(" ");
+        System.out.println("Search node in linkedlist");
+        linkedList.search(linkedList.head, 14);
         System.out.println("Adding node at beginning of linkedlist");
         linkedList.insertNodeAtBeginning(30);
 
