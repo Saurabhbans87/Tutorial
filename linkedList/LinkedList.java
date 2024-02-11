@@ -88,6 +88,15 @@ public class LinkedList {
             current = current.next;
         }
     }
+    private void searchRecursive(Node head, int i) {
+        if(head == null){
+            System.out.println("Data not found");
+        }
+        if(head.data == i){
+            System.out.println("Data found");
+        }
+        searchRecursive(head.next,i);
+    }
 
     public static void main(String[] args) {
         //Creating linked list
@@ -115,6 +124,7 @@ public class LinkedList {
         System.out.println(" ");
         System.out.println("Search node in linkedlist");
         linkedList.search(linkedList.head, 14);
+        //linkedList.searchRecursive(linkedList.head, 15);
         System.out.println("Adding node at beginning of linkedlist");
         linkedList.insertNodeAtBeginning(30);
 
