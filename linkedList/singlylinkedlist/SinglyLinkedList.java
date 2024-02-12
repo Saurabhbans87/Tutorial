@@ -34,6 +34,18 @@ public class SinglyLinkedList {
         }
         System.out.println(" ");
     }
+    public void inseartAtEnd(int data){
+        Node newNode = new Node(data);
+        if(head == null){
+            head =newNode;
+            return;
+        }
+        Node current = head;
+        while (current.next != null){
+            current = current.next;
+        }
+        current.next = newNode;
+    }
 
     public static void main(String[] args) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
@@ -43,6 +55,8 @@ public class SinglyLinkedList {
         first.next = second;
         singlyLinkedList.printSinglyLinkedList();
         singlyLinkedList.inseartAtBeginning(5);
+        singlyLinkedList.printSinglyLinkedList();
+        singlyLinkedList.inseartAtEnd(35);
         singlyLinkedList.printSinglyLinkedList();
 
     }
