@@ -7,7 +7,7 @@ package linkedList.singlylinkedlist;
 
 public class SinglyLinkedList {
     Node head;
-    class Node{
+    static class Node{
         int data;
         Node next;
         public Node(int data){
@@ -17,7 +17,7 @@ public class SinglyLinkedList {
     public SinglyLinkedList(){
         this.head = null;
     }
-    public void inseartAtHead(int data){
+    public void inseartAtBeginning(int data){
         Node newNode = new Node(data);
         if(head == null){
             head = newNode;
@@ -32,11 +32,18 @@ public class SinglyLinkedList {
             System.out.print(current.data + " ");
             current = current.next;
         }
+        System.out.println(" ");
     }
 
     public static void main(String[] args) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
-        singlyLinkedList.inseartAtHead(5);
+        Node first = new Node(20);
+        Node second = new Node(25);
+        singlyLinkedList.head = first;
+        first.next = second;
         singlyLinkedList.printSinglyLinkedList();
+        singlyLinkedList.inseartAtBeginning(5);
+        singlyLinkedList.printSinglyLinkedList();
+
     }
 }
