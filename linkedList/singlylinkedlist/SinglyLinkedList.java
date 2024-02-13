@@ -46,6 +46,18 @@ public class SinglyLinkedList {
         }
         current.next = newNode;
     }
+    public void inseartAtPosition(int data,int position){
+        Node newNode = new Node(data);
+        if(head == null){
+            head =newNode;
+            return;
+        }
+        Node current = head;
+        while (current.next != null){
+            current = current.next;
+        }
+        current.next = newNode;
+    }
 
     public static void main(String[] args) {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
