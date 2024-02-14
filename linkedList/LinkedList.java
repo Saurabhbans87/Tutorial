@@ -114,13 +114,15 @@ public class LinkedList {
         Node second = new Node(12);
         Node third = new Node(14);
         Node fourth = new Node(15);
-        Node sixth = new Node(15);
+        Node sixth = new Node(20);
+        Node seventh = new Node(25);
         //assigning reference
         linkedList.head = first;
         first.next = second;
         second.next = third;
         third.next = fourth;
         fourth.next = sixth;
+        sixth.next = seventh;
 
         linkedList.display();
         System.out.println(" ");
