@@ -1,8 +1,8 @@
-## singly linked list
+## Singly linked list
 A singly linked list is a data structure that consists of a sequence of elements called nodes. Each node contains two parts: data and a reference (or link) to the next node in the sequence. 
 The last node in the list points to null, indicating the end of the list.
 
-## singly linked list components 
+## Singly linked list components 
 Here are the main components of a singly linked list:
 
 Node: Each node in a singly linked list contains two fields:
