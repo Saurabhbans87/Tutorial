@@ -70,7 +70,6 @@ public class SinglyLinkedList {
         singlyLinkedList.printSinglyLinkedList();
         singlyLinkedList.inseartAtEnd(35);
         singlyLinkedList.printSinglyLinkedList();
-        singlyLinkedList.inseartAtEnd(45);
         singlyLinkedList.printSinglyLinkedList();
 
     }
