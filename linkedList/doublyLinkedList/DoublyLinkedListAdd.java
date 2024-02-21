@@ -69,6 +69,7 @@ public class DoublyLinkedListAdd {
        doublyLinkedListAdd.inseartAtEnd(20);
        doublyLinkedListAdd.inseartAtEnd(25);
        doublyLinkedListAdd.inseartAtEnd(30);
+        doublyLinkedListAdd.inseartAtEnd(30);
        doublyLinkedListAdd.forwardLinkedListPrint();
        doublyLinkedListAdd.backwardLinkedListPrint();
 
