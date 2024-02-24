@@ -27,6 +27,7 @@ public class QueueExample {
         queue1.add(50);
         queue1.add(10);
         queue1.add(34);
+        queue1.add(39);
         while(!queue1.isEmpty()){
             System.out.println(queue1.remove());
         }
