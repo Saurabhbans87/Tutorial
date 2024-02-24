@@ -62,6 +62,7 @@ public class QueueUsingArray {
         queueUsingArray.enQueue(3);
         queueUsingArray.enQueue(4);
         queueUsingArray.enQueue(5);
+        queueUsingArray.enQueue(9);
         System.out.println("Front " +queueUsingArray.deQueue());
 
     }
