@@ -20,12 +20,12 @@ public class NextGreaterElement {
         int[] result = new int[array.length];
         Stack<Integer> stack = new Stack<>();
         for(int i=0; i< array.length;i++){
-            while(!stack.isEmpty() && array[i] > stack.peek()){
+            while(!stack.isEmpty() && array[i] > array[stack.peek()]){
                 int index = stack.pop();
-                //result[index] = array[i];
-                result[i] =result[index];
+                result[index] = array[i];
+                //result[i] =result[index];
             }
-            stack.push(array[i]);
+            stack.push(i);
         }
         return result;
     }
