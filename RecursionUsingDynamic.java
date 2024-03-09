@@ -6,7 +6,7 @@
 
 public class RecursionUsingDynamic {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 6;
         int[] table = new int[n];
         int[] ints = fibonacchiSeriesDynamic(table, n);
         for(int i=0;i<ints.length;i++){
