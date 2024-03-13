@@ -24,7 +24,7 @@ public class BruteForceAlgorithm {
     }
     
     public static void main(String[] args) {
-        int[] arr = {2, 4, 3, 5, 7, 8, 9};
+        int[] arr = {2, 4, 3, 5, 7, 8, 9,12};
         int target = 7;
         List<List<Integer>> pairs = findPairsWithSum(arr, target);
         
