@@ -8,8 +8,8 @@ package Algorithm;
 public class Kadane {
     public static void main(String[] args) {
         //int[] arr = {-3, 2, -1, 6, 3, -6, 2, -1, -3};
-        //int[] arr = {-8, -6, -10, -2, -5, -7};
-        int[] arr = {-2, -3, 4, -1, -2, 1, 5, -3};
+        int[] arr = {-8, -6, -10, -2, -5, -7};
+        //int[] arr = {-2, -3, 4, -1, -2, 1, 5, -3};
         //int[] arr = {3, 7, 2, 1, 8, 4};
         int maximumSubarraySum = maxSubArrayProblem(arr);
         System.out.println("Kadane’s Algorithm maximum sum of a subarray is: " + maximumSubarraySum);
