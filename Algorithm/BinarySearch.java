@@ -24,7 +24,7 @@ public class BinarySearch {
         return -1;
     }
     public static void main(String[] args) {
-        int[] array = {12,23,25,36,48,49,52,58,60,65,78,82};
+        int[] array = {10,12,23,25,36,48,49,52,58,60,65,78,82};
         int key = 36;
         int index = binarySearchAlgorithm(array, key);
         if(index == -1){
