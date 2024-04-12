@@ -12,7 +12,7 @@ public class NextGreaterElement {
         int[] array = {5,6,3,12,10};
         int[] nextGreatElement = nextGreaterElement(array);
         for (int i=0;i<array.length;i++){
-            System.out.print(nextGreatElement[i]);
+            System.out.print(nextGreatElement[i]+" ");
         }
     }
 
