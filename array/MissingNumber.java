@@ -12,7 +12,16 @@ public class MissingNumber {
         int[] array = {1,2,3,4,6,7,8,9};
         //missingNumber(array);
         int[] array1 = {12,10,14,8,9,13,15,25,22,25};
-        missingNumberTwoPointer(array1);
+        //missingNumberTwoPointer(array1);
+        missingNumberChecking(array);
+    }
+
+    private static void missingNumberChecking(int[] array) {
+        System.out.print("and the missing element is ");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0)
+                System.out.println(i + 1);
+        }
     }
 
     private static void missingNumberTwoPointer(int[] array) {
